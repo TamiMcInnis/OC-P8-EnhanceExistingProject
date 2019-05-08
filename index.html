@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en" data-framework="javascript">
+	<!-- HEAD -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<!-- SEO -->
+		<meta name="description" content="The todo list app if a free online tool that will help you get and stay organized. Simplify your life today!">
+		<meta name="og:title" property="og:title" content="The todo list app if a free online tool to help you stay organized!">
+		<meta property="og:type" content="website">
+
+		<!-- STYLES -->
+		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">	
+
+		<title>The Todo List App</title>
+	</head>
+
+	<!-- BODY -->
+	<body>
+		<!-- MAIN APP -->
+		<section class="todoapp">
+
+			<header class="header">
+
+				<div class="instr-block">
+					<!-- TITLE -->
+					<h1>todos</h1>
+					<!-- INSTRUCTIONS -->
+					<p class="instr">Add items to your todo list below. Edit an item by double-clicking on it.</p>
+					<p class="instr">Check off an item with the circle beside it, or all items at once with the arrow.</p>
+					<p class="instr">Filter items with the settings at the bottom.</p>
+				</div>
+				<!-- TEXT INPUT -->
+				<input class="new-todo" placeholder="What needs to be done?" name="new-todo" aria-label="new todo input" autofocus>
+			</header>
+
+			<!-- MAIN AREA -->
+			<section class="main">
+				<!-- TOGGLE ALL CHECKBOXES -->
+				<input class="toggle-all" type="checkbox" aria-label="toggle all checkboxes">
+				<!-- TODOS DYNAMICALLY GENERATED HERE -->
+				<ul class="todo-list"></ul>
+			</section>
+
+			<!-- APP FOOTER -->
+			<footer class="footer">
+				<!-- TODO COUNT -->
+				<span class="todo-count"></span>
+				<!-- USER FILTERS -->
+				<ul class="filters">
+					<li>
+						<a href="#/" class="selected">All</a>
+					</li>
+					<li>
+						<a href="#/active">Active</a>
+					</li>
+					<li>
+						<a href="#/completed">Completed</a>
+					</li>
+				</ul>
+				<!-- CLEAR COMPLETED -->
+				<button class="clear-completed">Clear completed</button>
+			</footer>
+
+		</section>
+
+		<!-- SITE FOOTER -->
+		<footer class="info">
+			<p>Created by Oscar Godson</p>
+			<p>Refactored by Christoph Burgmer</p>
+		</footer>
+
+		<!-- SCRIPTS -->
+		<script src="node_modules/todomvc-common/base.js"></script>
+		<script src="js/helpers.js"></script>
+		<script src="js/store.js"></script>
+		<script src="js/model.js"></script>
+		<script src="js/template.js"></script>
+		<script src="js/view.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="js/app.js"></script>
+
+	</body>
+
+</html>
