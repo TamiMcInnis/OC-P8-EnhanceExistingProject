@@ -16,4 +16,4 @@ The existing code base given for the project is based on **todo-mvc** which you 
 
 This project was developed and tested on a proxy server. If you would like to clone this project and do not have a proxy server, you can download **live-server** [here](https://www.npmjs.com/package/live-server "npm live-server"), which is what I used for the project.
 
-To view the web audit and technical documentation for the project please see the accompanying wiki [here].
+To view the web audit and technical documentation for the project please see the accompanying wiki [here](https://github.com/TamiMcInnis/OC-P8-EnhanceExistingProject/wiki "Wiki link").
