@@ -206,6 +206,13 @@
 		});
 	};
 
+
+	// =======================
+	// Binds reference of "this" (view.js) for use inside of events in controller.js
+	// Is called via the controller.js on initial load for each possible event
+	// @param event {string}, name of event to match for binding
+	// @param handler {function}, the function to bind "this" within
+	// =======================
 	View.prototype.bind = function (event, handler) {
 		var self = this;
 		if (event === 'newTodo') {

@@ -12,7 +12,7 @@
 	}
 
 	// =======================
-	// Creates a new todo model
+	// Creates a new todo item in storage
 	//
 	// @param [title] {string}, the title of the todo
 	// @param [callback] {function}, the callback to fire after the model is created
@@ -30,13 +30,13 @@
 	};
 
 	// =======================
-	// Finds and returns a model in storage. 
+	// Finds and returns an item in storage. 
 	// If no query is given it'll simply return everything.
-	// If given a string or number it'll look that up as the ID of the model to find. 
+	// If given a string or number it'll look that up as the ID of the item to find. 
 	// Lastly, you can pass it an object to match against.
 	//
-	// @param [query] {string|number|object}, a query to match models against
-	// @param [callback] {function}, the callback to fire after the model is found
+	// @param [query] {string|number|object}, a query to match items against
+	// @param [callback] {function}, the callback to fire after the item is found
 	// =======================
 	Model.prototype.read = function (query, callback) {
 		var queryType = typeof query;
