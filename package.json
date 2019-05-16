@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "dependencies": {
     "todomvc-app-css": "^2.0.1",
     "todomvc-common": "^1.0.1"
